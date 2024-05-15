@@ -1,0 +1,109 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  width: 500px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Expense-Tracker {
+  text-align: center;
+  font-size: 1.8rem; 
+  margin-bottom: 15px;
+  color: #333; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+  color: #333; 
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4CAF50; 
+  color: #fff;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 1rem; 
+}
+
+button:hover {
+  background-color: #3e8e41; 
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listData {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  background-color: #fafafa; 
+  transition: background-color 0.2s ease-in-out;
+}
+
+.listData:hover {
+  background-color: #eee; 
+}
+
+#total {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333; 
+  text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+  .App {
+    width: 90%;
+  }
+
+  .Expense-Tracker {
+    font-size: 1.5rem;
+  }
+
+  button,
+  input[type="text"],
+  input[type="number"] {
+    font-size: 0.9rem;
+  }
+}
